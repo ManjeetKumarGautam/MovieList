@@ -72,9 +72,9 @@
   color: #d1d5dc;
 }
 
-@media (max-width:600px) {
+@media (max-width:460px) {
   .App {
-    padding: 2% 5%;
+    padding: 5%;
   }
 
   .section-heading {
@@ -85,11 +85,21 @@
     gap: 30px
   }
 
+  .movie-card {
+    flex: 1 1 120px;
+
+  }
+
 }
 
 @media (max-width:768px) {
 
   .section-heading {
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+
+  .movie-card {
+    flex: 1 1 180px;
+
   }
 }
