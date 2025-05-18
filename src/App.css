@@ -5,10 +5,7 @@
 
 .movies-section {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+
 }
 
 .section-heading {
@@ -18,14 +15,14 @@
 
 #movie-wrapper {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 200px repeat(auto-fill, minmax(180px, 1fr));
   gap: 40px;
-  position: relative;
+
 }
 
 .movie-card {
-  flex: 1 1 200px;
+
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
@@ -72,7 +69,7 @@
   color: #d1d5dc;
 }
 
-@media (max-width:460px) {
+@media (max-width:600px) {
   .App {
     padding: 5%;
   }
@@ -81,14 +78,7 @@
     font-size: 2em;
   }
 
-  #movie-wrapper {
-    gap: 30px
-  }
 
-  .movie-card {
-    flex: 1 1 120px;
-
-  }
 
 }
 
@@ -98,8 +88,5 @@
     font-size: 3em;
   }
 
-  .movie-card {
-    flex: 1 1 180px;
 
-  }
 }
